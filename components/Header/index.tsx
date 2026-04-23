@@ -50,10 +50,10 @@ const Header = () => {
       >
         <div className="container">
           <div className="relative -mx-4 flex items-center justify-between">
-            <div className="w-60 max-w-full px-4 xl:mr-12">
+            <div className="w-auto max-w-full px-4 xl:mr-12">
               <Link
                 href="/"
-                className={`header-logo block w-full ${
+                className={`header-logo flex items-center gap-3 whitespace-nowrap ${
                   sticky ? "py-5 lg:py-2" : "py-8"
                 } `}
               >
@@ -71,6 +71,9 @@ const Header = () => {
                   height={30}
                   className="hidden h-14 w-auto dark:block"
                 />
+                <span className="text-xl font-bold text-dark dark:text-white">
+                  Ambis Tech
+                </span>
               </Link>
             </div>
             <div className="flex w-full items-center justify-between px-4">
