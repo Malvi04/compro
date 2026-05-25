@@ -4,10 +4,10 @@ import { Brand } from "@/types/brand";
 const getBrandsData = (): Brand[] => [
   {
     id: 1,
-    name: "UIdeck",
+    name: "Best Services",
     href: "https://uideck.com",
-    image: getImagePath("/images/brands/uideck.svg"),
-    imageLight: getImagePath("/images/brands/uideck-light.svg"),
+    image: getImagePath("/images/brands/best.png"),
+    imageLight: getImagePath("/images/brands/best.png"),
   },
   {
     id: 2,

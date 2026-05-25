@@ -14,25 +14,27 @@ const Footer = () => {
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-5/12">
               <div className="mb-12 max-w-[360px] lg:mb-16">
-                <Link href="/" className="mb-8 inline-block">
-                  <Image
-                    src={getImagePath("/images/logo/logo-2.svg")}
-                    alt="logo"
-                    className="w-full dark:hidden"
-                    width={140}
-                    height={30}
-                  />
-                  <Image
-                    src={getImagePath("/images/logo/logo.svg")}
-                    alt="logo"
-                    className="hidden w-full dark:block"
-                    width={140}
-                    height={30}
-                  />
-                </Link>
+                <div className="mb-8 w-[120px]">
+                  <Link href="/">
+                    <Image
+                      src={getImagePath("/images/logo/light.png")}
+                      alt="logo"
+                      className="dark:hidden"
+                      width={120}
+                      height={40}
+                    />
+                    <Image
+                      src={getImagePath("/images/logo/dark.png")}
+                      alt="logo"
+                      className="hidden dark:block"
+                      width={120}
+                      height={40}
+                    />
+                  </Link>
+                </div>
+                
                 <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer lobortis.
+                  Membantu bisnis skala menengah dan besar mengotomatisasi proses bisnis melalui perangkat lunak yang efisien.
                 </p>
                 <div className="flex items-center">
                   <a
@@ -208,18 +210,7 @@ const Footer = () => {
           <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
           <div className="py-8">
             <p className="text-center text-base text-body-color dark:text-white">
-              Template by UIdeck and{" "}
-              <a href="https://nextjstemplates.com" rel="nofollow noopener">
-                Next.js Templates
-              </a>
-              . Distributed by{" "}
-              <a
-                target="_blank"
-                href="https://themewagon.com/"
-                rel="nofollow noopener noreferrer"
-              >
-                ThemeWagon
-              </a>
+              Template by UIdeck and
             </p>
           </div>
         </div>

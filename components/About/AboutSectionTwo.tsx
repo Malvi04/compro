@@ -3,55 +3,70 @@ import Image from "next/image";
 
 const AboutSectionTwo = () => {
   return (
-    <section className="py-16 md:py-20 lg:py-28">
+    <section className="bg-gray-50 py-16 dark:bg-black md:py-20 lg:py-28">
       <div className="container">
         <div className="-mx-4 flex flex-wrap items-center">
+          {/* LEFT IMAGE */}
           <div className="w-full px-4 lg:w-1/2">
-            <div
-              className="wow fadeInUp relative mx-auto mb-12 aspect-[25/24] max-w-[500px] text-center lg:m-0"
-              data-wow-delay=".15s"
-            >
+            <div className="relative mx-auto mb-12 aspect-[3/2] max-h-[500px] max-w-[500px] overflow-hidden rounded-2xl text-center shadow-lg lg:m-0">
               <Image
-                src={getImagePath("/images/about/about-image-2.svg")}
-                alt="about image"
+                src={getImagePath("/images/about/about-light.png")}
+                alt="AmbisTech"
                 fill
-                className="drop-shadow-three dark:hidden dark:drop-shadow-none"
+                className="object-cover drop-shadow-three dark:hidden"
               />
               <Image
-                src={getImagePath("/images/about/about-image-2-dark.svg")}
-                alt="about image"
+                src={getImagePath("/images/about/dark-v2.png")}
+                alt="AmbisTech"
                 fill
-                className="hidden drop-shadow-three dark:block dark:drop-shadow-none"
+                className="hidden object-cover drop-shadow-three dark:block"
               />
             </div>
           </div>
+
+          {/* RIGHT CONTENT */}
           <div className="w-full px-4 lg:w-1/2">
-            <div className="wow fadeInUp max-w-[470px]" data-wow-delay=".2s">
-              <div className="mb-9">
-                <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Bug free code
+            <div className="max-w-[500px]">
+              {/* SECTION TITLE */}
+              <h2 className="mb-6 text-3xl font-bold text-black dark:text-white sm:text-4xl">
+                Solusi Cerdas untuk Bisnis Modern
+              </h2>
+
+              <p className="mb-10 text-base leading-relaxed text-body-color sm:text-lg">
+                AmbisTech membantu Anda mengelola bisnis dengan lebih efisien,
+                cepat, dan terkontrol dalam satu sistem terintegrasi.
+              </p>
+
+              {/* ITEM 1 */}
+              <div className="mb-8">
+                <h3 className="mb-2 text-xl font-semibold text-black dark:text-white">
+                  Efisiensi Operasional
                 </h3>
-                <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                <p className="text-base leading-relaxed text-body-color">
+                  Otomatisasi proses bisnis untuk menghemat waktu dan mengurangi
+                  kesalahan manual.
                 </p>
               </div>
-              <div className="mb-9">
-                <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Premier support
+
+              {/* ITEM 2 */}
+              <div className="mb-8">
+                <h3 className="mb-2 text-xl font-semibold text-black dark:text-white">
+                  Monitoring Real-Time
                 </h3>
-                <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt.
+                <p className="text-base leading-relaxed text-body-color">
+                  Pantau kondisi bisnis Anda kapan saja melalui dashboard yang
+                  mudah digunakan.
                 </p>
               </div>
-              <div className="mb-1">
-                <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Next.js
+
+              {/* ITEM 3 */}
+              <div>
+                <h3 className="mb-2 text-xl font-semibold text-black dark:text-white">
+                  Sistem Terintegrasi
                 </h3>
-                <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt
-                  consectetur adipiscing elit setim.
+                <p className="text-base leading-relaxed text-body-color">
+                  Semua data keuangan, stok, dan operasional terhubung dalam
+                  satu platform.
                 </p>
               </div>
             </div>

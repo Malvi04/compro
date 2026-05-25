@@ -5,18 +5,24 @@ const nextConfig = {
   skipTrailingSlashRedirect: true,
   distDir: 'dist',
   basePath: process.env.NEXT_PUBLIC_BASE_PATH || '',
-  assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH ? `${process.env.NEXT_PUBLIC_BASE_PATH}/` : '',
+  assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH
+    ? `${process.env.NEXT_PUBLIC_BASE_PATH}/`
+    : '',
   images: {
     unoptimized: true,
-    domains: ["localhost"],
     remotePatterns: [
+      {
+        protocol: "http",
+        hostname: "localhost",
+        pathname: "/**",
+      },
       {
         protocol: "https",
         hostname: "cdn.sanity.io",
-        port: "",
+        pathname: "/**",
       },
     ],
   },
 };
 
-module.exports = nextConfig;
+  module.exports = nextConfig;
