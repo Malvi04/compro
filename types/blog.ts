@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 type Author = {
   name: string;
   image: string;
@@ -12,4 +14,5 @@ export type Blog = {
   author: Author;
   tags: string[];
   publishDate: string;
+  content?: ReactNode;
 };

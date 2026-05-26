@@ -11,7 +11,7 @@ const NewsLatterBox = () => {
     setMounted(true);
   }, []);
 
-  // ⛔ penting: hindari hydration mismatch
+  // penting: hindari hydration mismatch
   if (!mounted) return null;
 
   const color = theme === "light" ? "#4A6CF7" : "#fff";
@@ -19,28 +19,27 @@ const NewsLatterBox = () => {
   return (
     <div className="wow fadeInUp shadow-three dark:bg-gray-dark relative z-10 rounded-sm bg-white p-8 sm:p-11 lg:p-8 xl:p-11">
       <h3 className="mb-4 text-2xl font-bold leading-tight text-black dark:text-white">
-        Subscribe to receive future updates
+        Berlangganan Info Terbaru
       </h3>
 
       <p className="mb-11 border-b border-body-color border-opacity-25 pb-11 text-base leading-relaxed text-body-color dark:border-white dark:border-opacity-25">
-        Lorem ipsum dolor sited Sed ullam corper consectur adipiscing Mae ornare
-        massa quis lectus.
+        Dapatkan artikel edukatif, tren teknologi bisnis, dan pembaruan fitur sistem gratis langsung di email Anda setiap minggu.
       </p>
 
       <div>
         <input
           type="text"
-          placeholder="Enter your name"
+          placeholder="Masukkan Nama Lengkap Anda"
           className="mb-4 w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base outline-none dark:bg-[#2C303B]"
         />
         <input
           type="email"
-          placeholder="Enter your email"
+          placeholder="Masukkan Alamat Email Anda"
           className="mb-4 w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base outline-none dark:bg-[#2C303B]"
         />
         <input
           type="submit"
-          value="Subscribe"
+          value="Daftar Sekarang"
           className="mb-5 w-full cursor-pointer rounded-sm bg-primary px-9 py-4 text-white"
         />
       </div>

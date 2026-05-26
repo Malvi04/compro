@@ -1,5 +1,6 @@
 import AboutSectionOne from "@/components/About/AboutSectionOne";
 import AboutSectionTwo from "@/components/About/AboutSectionTwo";
+import VisiMisi from "@/components/About/VisiMisi";
 import Breadcrumb from "@/components/Common/Breadcrumb";
 
 import { Metadata } from "next";
@@ -15,8 +16,9 @@ const AboutPage = () => {
     <>
       <Breadcrumb
         pageName="About Page"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
+        description="AmbisTech hadir untuk memangkas kerumitan operasional UMKM lewat sistem POS & ERP yang dirancang sederhana, instan, dan yang terpenting, ramah di kantong usaha Anda."
       />
+      <VisiMisi />
       <AboutSectionOne />
       <AboutSectionTwo />
     </>

@@ -14,8 +14,8 @@ const Blog = () => {
   return (
     <>
       <Breadcrumb
-        pageName="Blog Grid"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
+        pageName="Wawasan Bisnis & Teknologi"
+        description="Temukan artikel, panduan, dan tips mendalam seputar digitalisasi untuk mempercepat pertumbuhan dan efisiensi operasional bisnis Anda."
       />
 
       <section className="pb-[120px] pt-[120px]">
@@ -35,7 +35,7 @@ const Blog = () => {
             className="wow fadeInUp -mx-4 flex flex-wrap"
             data-wow-delay=".15s"
           >
-            <div className="w-full px-4">
+            {/* <div className="w-full px-4">
               <ul className="flex items-center justify-center pt-8">
                 <li className="mx-1">
                   <a
@@ -91,7 +91,7 @@ const Blog = () => {
                   </a>
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
