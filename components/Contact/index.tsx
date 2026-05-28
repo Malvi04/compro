@@ -17,9 +17,10 @@ const Contact = () => {
               <p className="mb-12 text-base font-medium text-body-color">
                 Tim teknis kami akan segera menghubungi dan menyelesaikan kendala Anda melalui email atau WhatsApp.
               </p>
-              <form action="https://formspree.io/f/GANTI_DENGAN_ID_ANDA" method="POST">
+              <form action="https://formspree.io/f/mbdbpnbj" method="POST">
                 <div className="-mx-4 flex flex-wrap">
                   <div className="w-full px-4 md:w-1/2">
+                    <input type="hidden" name="_next" value="http://localhost:3000/terima-kasih" />
                     <div className="mb-8">
                       <label
                         htmlFor="name"
