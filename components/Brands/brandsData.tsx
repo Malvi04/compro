@@ -13,8 +13,8 @@ const getBrandsData = (): Brand[] => [
     id: 2,
     name: "Tailgrids",
     href: "https://tailgrids.com",
-    image: getImagePath("/images/brands/tailgrids.svg"),
-    imageLight: getImagePath("/images/brands/tailgrids-light.svg"),
+    image: getImagePath("/images/brands/tailgrids.png"),
+    imageLight: getImagePath("/images/brands/tailgrids.png"),
   },
   {
     id: 3,
@@ -36,6 +36,20 @@ const getBrandsData = (): Brand[] => [
     href: "https://plainadmin.com",
     image: getImagePath("/images/brands/plainadmin.svg"),
     imageLight: getImagePath("/images/brands/plainadmin-light.svg"),
+  },
+  {
+    id: 6,
+    name: "DOKU",
+    href: "https://doku.com",
+    image: getImagePath("/images/brands/doku.png"),
+    imageLight: getImagePath("/images/brands/doku.png"),
+  },
+  {
+    id: 7,
+    name: "Midtrans",
+    href: "https://midtrans.com",
+    image: getImagePath("/images/brands/midtrans.png"),
+    imageLight: getImagePath("/images/brands/midtrans.png"),
   },
 ];
 

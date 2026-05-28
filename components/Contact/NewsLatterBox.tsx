@@ -17,30 +17,25 @@ const NewsLatterBox = () => {
   const color = theme === "light" ? "#4A6CF7" : "#fff";
 
   return (
-    <div className="wow fadeInUp shadow-three dark:bg-gray-dark relative z-10 rounded-sm bg-white p-8 sm:p-11 lg:p-8 xl:p-11">
-      <h3 className="mb-4 text-2xl font-bold leading-tight text-black dark:text-white">
-        Berlangganan Info Terbaru
+    <div className="wow fadeInUp shadow-three dark:bg-gray-dark relative z-10 rounded-xl bg-white p-8 sm:p-11 lg:p-8 xl:p-11 border border-gray-100 dark:border-gray-800">
+      <h3 className="mb-4 text-xl font-bold leading-tight text-black dark:text-white sm:text-2xl">
+        Dapatkan Update Terbaru
       </h3>
 
-      <p className="mb-11 border-b border-body-color border-opacity-25 pb-11 text-base leading-relaxed text-body-color dark:border-white dark:border-opacity-25">
-        Dapatkan artikel edukatif, tren teknologi bisnis, dan pembaruan fitur sistem gratis langsung di email Anda setiap minggu.
+      <p className="mb-8 border-b border-body-color border-opacity-10 pb-8 text-sm leading-relaxed text-body-color dark:border-white dark:border-opacity-10 sm:text-base">
+        Bergabunglah dengan 5.000+ pemilik bisnis yang mendapatkan tips teknologi eksklusif setiap minggunya.
       </p>
 
       <div>
         <input
-          type="text"
-          placeholder="Masukkan Nama Lengkap Anda"
-          className="mb-4 w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base outline-none dark:bg-[#2C303B]"
-        />
-        <input
           type="email"
-          placeholder="Masukkan Alamat Email Anda"
-          className="mb-4 w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base outline-none dark:bg-[#2C303B]"
+          placeholder="Email Anda"
+          className="mb-4 w-full rounded-md border border-stroke bg-white px-6 py-3 text-base text-body-color outline-none transition-all focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:focus:border-primary"
         />
         <input
           type="submit"
-          value="Daftar Sekarang"
-          className="mb-5 w-full cursor-pointer rounded-sm bg-primary px-9 py-4 text-white"
+          value="Berlangganan Sekarang"
+          className="mb-5 w-full cursor-pointer rounded-md bg-blue-600 px-9 py-3 font-medium text-white transition-all hover:bg-blue-700"
         />
       </div>
 

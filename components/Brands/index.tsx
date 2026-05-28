@@ -1,11 +1,18 @@
 import { Brand } from "@/types/brand";
 import Image from "next/image";
 import brandsData from "./brandsData";
+import SectionTitle from "../Common/SectionTitle";
 
 const Brands = () => {
   return (
     <section className="pt-16">
       <div className="container">
+        <SectionTitle
+          title="Our Partner"
+          paragraph=""
+          center
+          mb="40px"
+        />
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">
             <div

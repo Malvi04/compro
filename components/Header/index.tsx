@@ -108,20 +108,30 @@ const Header = () => {
                         {menuItem.path ? (
                           <Link
                             href={menuItem.path}
-                            className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${usePathName === menuItem.path
+                            className={`group flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${usePathName === menuItem.path
                                 ? "text-primary dark:text-white"
                                 : "text-dark hover:text-primary dark:text-white/70 dark:hover:text-white"
                               }`}
                           >
-                            {menuItem.title}
+                            <span className="relative">
+                              {menuItem.title}
+                              <span
+                                className={`absolute -bottom-1 left-0 h-[2px] w-full origin-left bg-primary transition-transform duration-300 ${
+                                  usePathName === menuItem.path ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"
+                                }`}
+                              />
+                            </span>
                           </Link>
                         ) : (
                           <>
                             <p
                               onClick={() => handleSubmenu(index)}
-                              className="flex cursor-pointer items-center justify-between py-2 text-base text-dark group-hover:text-primary dark:text-white/70 dark:group-hover:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-6"
+                              className="group/p flex cursor-pointer items-center justify-between py-2 text-base text-dark hover:text-primary dark:text-white/70 dark:hover:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-6"
                             >
-                              {menuItem.title}
+                              <span className="relative">
+                                {menuItem.title}
+                                <span className="absolute -bottom-1 left-0 h-[2px] w-full origin-left scale-x-0 bg-primary transition-transform duration-300 group-hover/p:scale-x-100" />
+                              </span>
                               <span className="pl-3">
                                 <svg width="25" height="24" viewBox="0 0 25 24">
                                   <path
@@ -141,9 +151,12 @@ const Header = () => {
                                 <Link
                                   href={submenuItem.path}
                                   key={`${index}-${subIndex}`}
-                                  className="block rounded py-2.5 text-sm text-dark hover:text-primary dark:text-white/70 dark:hover:text-white lg:px-3"
+                                  className="group block rounded py-2.5 text-sm text-dark hover:text-primary dark:text-white/70 dark:hover:text-white lg:px-3"
                                 >
-                                  {submenuItem.title}
+                                  <span className="relative inline-block">
+                                    {submenuItem.title}
+                                    <span className="absolute -bottom-0 left-0 h-[1.5px] w-full origin-left scale-x-0 bg-primary transition-transform duration-300 group-hover:scale-x-100" />
+                                  </span>
                                 </Link>
                               ))}
                             </div>
