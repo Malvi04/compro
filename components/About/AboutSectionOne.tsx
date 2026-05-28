@@ -32,7 +32,32 @@ const AboutSectionOne = () => {
             {/* LEFT CONTENT */}
             <div className="w-full px-4 lg:w-1/2">
               <SectionTitle
-                title="Kenapa Memilih AmbisTech?"
+                title={
+                  <>
+                    Kenapa Memilih{" "}
+                    <span className="relative z-10 inline-block text-primary">
+                      AmbisTech
+                      <svg
+                        className="animate-draw-circle absolute -left-2 -top-2 -z-10 h-[calc(100%+16px)] w-[calc(100%+16px)] text-primary opacity-80"
+                        viewBox="0 0 100 40"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        preserveAspectRatio="none"
+                      >
+                        <path
+                          d="M 99,20 A 49,19 0 0,1 1,20 A 49,19 0 0,1 99,20 L 96,20 A 46,16 0 0,1 4,20 A 46,16 0 0,1 96,20"
+                          stroke="currentColor"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          vectorEffect="non-scaling-stroke"
+                          pathLength="1000"
+                        />
+                      </svg>
+                    </span>
+                    ?
+                  </>
+                }
                 paragraph="Kami membantu bisnis Anda berkembang dengan sistem yang efisien, mudah digunakan, dan terintegrasi dalam satu platform."
                 mb="44px"
               />

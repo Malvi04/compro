@@ -60,7 +60,7 @@ const AboutSectionTwo = () => {
               </div>
 
               {/* ITEM 3 */}
-              <div>
+              <div className="mb-8">
                 <h3 className="mb-2 text-xl font-semibold text-black dark:text-white">
                   Sistem Terintegrasi
                 </h3>
@@ -71,6 +71,36 @@ const AboutSectionTwo = () => {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* FULL WIDTH PRICING HIGHLIGHT */}
+      <div className="mt-16 w-full bg-blue-600 px-4 py-16 dark:bg-blue-900 sm:px-6 lg:px-8">
+        <div className="mx-auto text-center">
+          <p className="text-3xl font-bold leading-tight text-white sm:text-4xl">
+            Mulai dari harga{" "}
+            <span className="relative z-10 inline-block text-yellow-300">
+              150 Ribu / bulan
+              <svg
+                className="animate-draw-circle absolute -left-2 -top-2 -z-10 h-[calc(100%+16px)] w-[calc(100%+16px)] text-yellow-300 opacity-90"
+                viewBox="0 0 100 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="none"
+              >
+                <path
+                  d="M 99,20 A 49,19 0 0,1 1,20 A 49,19 0 0,1 99,20 L 96,20 A 46,16 0 0,1 4,20 A 46,16 0 0,1 96,20"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  vectorEffect="non-scaling-stroke"
+                  pathLength="1000"
+                />
+              </svg>
+            </span>{" "}
+            & bisa Custom!
+          </p>
         </div>
       </div>
     </section>
